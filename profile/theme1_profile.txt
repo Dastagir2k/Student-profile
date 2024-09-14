@@ -1,0 +1,266 @@
+
+
+
+
+
+import React from "react";
+import profile from "./profile.jpg";
+import {
+  FaGithub,
+  FaGraduationCap,
+  FaLinkedin,
+  FaPhoneAlt,
+} from "react-icons/fa";
+import "../App.css"
+import { PiStudentFill } from "react-icons/pi";
+import { MdEmail, MdFileDownload } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { HiOutlineIdentification } from "react-icons/hi";
+import { SiCodechef, SiCodeforces, SiLeetcode } from "react-icons/si";
+import { LiaLinkedin } from "react-icons/lia";
+import { BiDownArrow, BiDownload } from "react-icons/bi";
+
+const Profile = () => {
+  const data = [
+    { name: "Java", proficiency: "80%" },
+    { name: "Mysql", proficiency: "80%" },
+    { name: "C++", proficiency: "50%" },
+    { name: "Docker", proficiency: "60%" },
+    { name: "Docker", proficiency: "60%" },
+    { name: "Docker", proficiency: "60%" },
+
+  ];
+  // style={{backgroundColor:"#FFF0EA"}}
+  return (
+    <div className="min-h-screen colors px-4 py-5 bgte"  >
+      <div className="flex flex-col md:flex-row gap-4">
+        {/* Left Column */}
+        <div className="md:w-1/3   text-white rounded-3xl p-4 bg-orange-500">
+          {/* Image, Name, and Role */}
+          <div className="flex flex-col items-center py-5 gap-2">
+            <img src={profile} className="w-1/2 rounded-3xl items-center" />
+            <h2 className="text-3xl  font-medium">Dastagir Ahmed</h2>
+            <h2 className="text-xl">Full-Stack Developer</h2>
+          </div>
+
+          {/* About Me */}
+          <div className="px-4 py-2 text-l font-serif">
+            <p>
+              I am a Full stack web developer. I build beautiful Websites with
+              React.js and Tailwind CSS + Bootstrap.
+            </p>
+          </div>
+
+          {/* Personal Information */}
+          <div className="px-4 py-4">
+            <h2 className="text-3xl py-2">Personal Information</h2>
+            <div className="grid grid-cols-2">
+              <div className="flex flex-row gap-2">
+                <PiStudentFill size={30} className="mt-2" />
+                <div className="py-2">2025</div>
+              </div>
+              <div className="flex flex-row gap-2">
+                <FaGraduationCap size={30} className="mt-2" />
+                <div className="py-2">Computer Science</div>
+              </div>
+              <div className="flex flex-row gap-2">
+                <MdEmail size={20} />
+                <div className="py-1">dastagir2k@gmail.com</div>
+              </div>
+              <div className="flex flex-row gap-2">
+                <CgProfile size={30} className="mt-2" />
+                <div className="py-2">Male</div>
+              </div>
+              <div className="flex flex-row gap-2">
+                <FaPhoneAlt size={20} className="mt-2" />
+                <div className="py-2 ">6369782996</div>
+              </div>
+              <div className="flex flex-row gap-2">
+                <HiOutlineIdentification size={30} className="mt-2" />
+                <div className="py-2">210421104037</div>
+              </div>
+            </div>
+
+            <div className=" bg-white text-black border-4 px-5 py-2 mt-2 flex items-center justify-center rounded-md cursor-pointer">
+                  <MdFileDownload size={30} />
+                <h2>Resume</h2>
+            
+              </div>
+          </div>
+
+
+
+          
+
+
+
+        </div>
+
+        {/* Middle Column */}
+        <div className="md:w-1/3 flex flex-col gap-4">
+          <div className=" rounded-3xl p-4  "style={{backgroundColor:"#FFF0EA"}}>
+            <h2 className="text-3xl text-center py-4 text-rred-500 underline">Experience</h2>
+            <div>
+              <div className="flex flex-row gap-3">
+                <h1 className="text-xl font-mono">Full-stack Development |</h1>
+                <h2>Bharth Intern</h2>
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, odio quisquam. Magnam voluptates quo cupiditate?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quidem reprehenderit consectetur labore dolorum consequuntur.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className=" rounded-3xl p-4" style={{backgroundColor:"#FFF0EA"}}>
+            <h2 className="text-3xl text-center py-4 underline">Projects</h2>
+            <div>
+              <div className="flex flex-row gap-3">
+                <h1 className="text-xl font-mono">Reserve Eat |</h1>
+                <a className="cursor-pointer font-bold px-2 py-1 rounded-xl text-red-600">View project</a>
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed molestias architecto excepturi itaque aut dolores?</li> 
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-row gap-3">
+                <h1 className="text-xl font-mono">Social Sphere |</h1>
+                <a className="cursor-pointer font-bold px-2 py-1 rounded-xl text-red-600">View project</a>
+                
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed molestias architecto excepturi itaque aut dolores?</li> 
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div className="flex flex-row gap-3">
+                <h1 className="text-xl font-mono">Vending Machine  |</h1>
+                <a className="cursor-pointer font-bold px-2 py-1 rounded-xl text-red-600">View project</a>
+                
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus et dignissimos, officiis deleniti</li>
+                </ul>
+              </div>
+              <div className="flex flex-row gap-3">
+                <h1 className="text-xl font-mono">Social Sphere |</h1>
+                <a className="cursor-pointer font-bold px-2 py-1 rounded-xl text-red-600">View project</a>
+                
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed molestias architecto excepturi itaque aut dolores?</li> 
+                </ul>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column */}
+        <div className="md:w-1/3 flex flex-col gap-2">
+          <div className=" rounded-3xl p-4" style={{backgroundColor:"#FFF0EA"}}>
+            <h2 className="text-3xl text-center py-1 underline">Skills</h2>
+            <div className="text-lg md:text-2xl font-sans grid grid-cols-1 md:grid-cols-3 gap-4">
+              {data.map((item, index) => (
+                <div key={index}>
+                  <h3>{item.name}</h3>
+                  <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-5">
+                    <div
+                      className="bg-red-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full h-5"
+                      style={{ width: item.proficiency }}
+                    >
+                      {item.proficiency}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className=" rounded-3xl p-2" style={{backgroundColor:"#FFF0EA"}}>
+            <h2 className="text-3xl text-center py-1 underline">Certification</h2>
+            <div>
+              <div className="flex flex-row gap-2">
+                <h1 className="text-xl font-mono">React.js</h1>
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
+              <div className="flex flex-row gap-3 py-1">
+                <h1 className="text-xl font-mono">Full-stack Development </h1>
+                <h2>Bharth Intern</h2>
+              </div>
+              <div className="px-4">
+                <ul className="list-disc">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="rounded-3xl py-1" style={{backgroundColor:"#FFF0EA"}}>
+          <h2 className="text-3xl text-center py-1 underline">Achievemnets</h2>
+          <div className="px-6">
+          <ul className="list-disc spx-4">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, mollitia!</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, mollitia!</li>
+          </ul>
+          </div>
+            
+          </div>
+
+          <div className=" rounded-3xl p-1" style={{backgroundColor:"#FFF0EA"}}>
+            <h2 className="text-3xl text-center py-1 underline">Social Platforms</h2>
+            <div className="grid grid-cols-3 gap-3 px-5">
+              <div className="border-red-500 hover:bg-red-500 hover:text-white border-4 px-2 py-1 flex items-center justify-center rounded-md cursor-pointer">
+                <a href="https://github.com/Dastagir2k">
+                  <FaGithub size={20} />
+                </a>
+              </div>
+              <div className="border-red-500 hover:bg-red-500 hover:text-white border-4 px-5 py-2 flex items-center justify-center rounded-md cursor-pointer">
+                <a href="https://www.linkedin.com/in/dastagir-ahmed-73b052256/">
+                  <FaLinkedin size={20} />
+                </a>
+              </div>
+              <div className="border-red-500 hover:bg-red-500 hover:text-white border-4 px-5 py-2 flex items-center justify-center rounded-md cursor-pointer">
+                <a href="https://leetcode.com/u/dastagir2k/">
+                  <SiLeetcode size={20} />
+                </a>
+              </div>
+              <div className="border-red-500 hover:bg-red-500 hover:text-white border-4 px-5 py-2 flex items-center justify-center rounded-md cursor-pointer">
+                <a href="https://codeforces.com/profile/username">
+                  <SiCodeforces size={20} />
+                </a>
+              </div>
+              <div className="border-red-500 hover:bg-red-500 hover:text-white border-4 px-5 py-2 flex items-center justify-center rounded-md cursor-pointer">
+                <a href="https://www.codechef.com/users/username">
+                  <SiCodechef size={20} />
+                </a>
+              </div>
+              <div className="border-red-500 hover:bg-red-500 hover:text-white border-4 px-5 py-2 flex items-center justify-center rounded-md cursor-pointer">
+                <MdFileDownload size={20} />
+              </div>
+            </div>
+          </div>
+
+
+          
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Profile;
