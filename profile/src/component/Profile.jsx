@@ -43,7 +43,7 @@ const Profile = () => {
     <div className="min-h-screen colors px-4 py-5 bgte">
       <div className="flex flex-col md:flex-row gap-4">
         {/* Left Column */}
-        <div className="md:w-1/3 text-white rounded-3xl p-4 bg-orange-500">
+        <div className="md:w-1/3  rounded-3xl p-4 bg-gradient-to-r from-orange-500 to-red-500">
           {/* Image, Name, and Role */}
           <div className="flex flex-col items-center py-5 gap-2">
             <img src={profile}  className="w-1/2 rounded-3xl items-center" />

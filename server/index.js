@@ -5,10 +5,14 @@ const Grid = require("gridfs-stream");
 const upload = require("./middleware/Upload.js");
 const Student = require("./models/Student.model.js");
 const util = require("util");
-
+require("dotenv").config()
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+
+
+const db_url=process.env.DATABASE_URL;
 
 // MongoDB connection and GridFS setup
 
@@ -110,7 +114,7 @@ app.get("/", (req, res) => {
 });
 
 // Connect to MongoDB and start server
-mongoose.connect("mongodb+srv://user123:test123@backenddb.jtwbp.mongodb.net/?retryWrites=true&w=majority&appName=BackendDb")
+mongoose.connect(db_url)
   .then(() => {
     console.log("Database connected!");
     app.listen(3000, () => {
